@@ -1,1 +1,1 @@
-https://andriizlt.github.io/index.html
+https://andriizlt.github.io/goit-markup-hw-01/
