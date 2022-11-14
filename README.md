@@ -1,2 +1,1 @@
-# goit-markup-hw-01
- Andrey Zlotnikov
+https://andriizlt.github.io/index.html
