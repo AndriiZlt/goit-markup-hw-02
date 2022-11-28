@@ -1,3 +1,218 @@
-ul {
-    color=blue
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  --h1-color: #ffffff;
+  --h2-color: #2e2f42;
+  --h3-color: #2e2f42;
+  --header-font: #2e2f42;
+  --page-background: #e5e5e5;
+  --logo-color-one: #4d5ae5;
+  --logo-color-two: #2e2f42;
+  --logo-color-free: #f4f4fd;
+  --article-text: #434455;
+  --accent-font-one: #434455;
+  --accent-font-two: #4d5ae5;
+  --btn-studio-background: #4d5ae5;
+  --btn-studio-text: #ffffff;
+  --btn-studio-active-bkgrnd: #404bbf;
+  --footer-text: #e7e9fc;
+  --header-background: #ffffff;
+  --section-background: #ffffff;
+  --hero-background: #2e2f42;
+  --headings-background: #e5e5e5;
+  --our-team-background: #f4f4fd;
+  --footer-background: #2e2f42;
+  --btn-portfol-background: #f4f4fd;
+  --btn-portfol-background-focus: #e7e9fc;
+  --btn-portfol-text: #4d5ae5;
+  --btn-portfol-active: #4d5ae5;
+  --btn-portfol-active-text: #ffffff;
+}
+
+.page {
+  color: var(--article-text);
+  background: var(--page-background);
+  font-family: "Roboto", "Raleway", serif;
+}
+/* Header */
+.page-header {
+  color: var(--page-header-font);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  background: var(--header-background);
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  color: var(--logo-color-one);
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.studio {
+  color: var(--logo-color-two);
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* site nav  */
+.site-nav .link {
+  color: var(--header-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-font-one);
+}
+
+.site-nav .link:active {
+  color: var(--accent-font-two);
+}
+
+.auth-nav .link {
+  color: var(--accent-font-one);
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-font-two);
+}
+
+/* Hero */
+.hero h1 {
+  color: var(--h1-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  background: var(--hero-background);
+}
+
+/* Кнопка на Studio */
+
+.btn-studio {
+  font-size: 16px;
+  line-height: 1.1875;
+  color: var(--btn-studio-text);
+  background: var(--btn-studio-background);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-style: normal;
+  /* display: flex;
+  align-items: center;
+  letter-spacing: 0.04em; */
+}
+
+.btn-studio:active {
+  background: var(--btn-studio-active-bkgrnd);
+}
+
+/* Кнопки на Portfolio */
+.btn-portfolio {
+  background: var(--btn-portfol-background);
+  color: var(--btn-portfol-text);
+  border: none;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+  cursor: pointer;
+  font-style: normal;
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  background: var(--btn-portfol-background-focus);
+}
+
+.btn-portfolio:active {
+  background: var(--btn-portfol-active);
+  color: var(--btn-portfol-active-text);
+}
+
+/* Features + Works + Examples*/
+.section {
+  background: var(--section-background);
+}
+
+.section-title {
+  color: var(--h2-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+}
+
+.section h2 {
+  font-size: 36px;
+  line-height: 1.11;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.section h3 {
+  color: var(--h3-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.section p {
+  color: var(--article-text);
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: 1.2;
+  /* letter-spacing: 0.02em; */
+}
+
+.title-hidden {
+  display: none;
+}
+
+.our-team {
+  background: var(--our-team-background);
+  font-size: 36px;
+  line-height: 1.11;
+}
+
+/* Футер */
+
+.footer {
+  background: var(--footer-background);
+  color: var(--footer-text);
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.studio-footer {
+  color: var(--logo-color-free);
 }
