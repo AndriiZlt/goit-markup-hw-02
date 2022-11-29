@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 
 :root {
+  /* Мне удобнее иметь весь список цветов чтобы при необходимости менять конкретный цвет в конкретном месте */
   --h1-color: #ffffff;
   --h2-color: #2e2f42;
   --h3-color: #2e2f42;
   --header-font: #2e2f42;
-  --page-background: #e5e5e5;
+  --page-background: #fff;
   --logo-color-one: #4d5ae5;
   --logo-color-two: #2e2f42;
   --logo-color-free: #f4f4fd;
@@ -29,18 +30,18 @@
   --btn-portfol-active-text: #ffffff;
 }
 
-.page {
+body {
   color: var(--article-text);
-  background: var(--page-background);
+  background-color: var(--page-background);
   font-family: "Roboto", "Raleway", serif;
 }
 /* Header */
 .page-header {
   color: var(--page-header-font);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  background: var(--header-background);
+  background-color: var(--header-background);
   font-style: normal;
 }
 
@@ -52,32 +53,35 @@
   color: var(--logo-color-one);
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .studio {
   color: var(--logo-color-two);
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 /* site nav  */
 .site-nav .link {
   color: var(--header-font);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -96,6 +100,7 @@
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
 .auth-nav .link:hover,
@@ -104,83 +109,110 @@
 }
 
 /* Hero */
+.hero {
+  background-color: var(--hero-background);
+}
+
 .hero h1 {
   color: var(--h1-color);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  background: var(--hero-background);
+  letter-spacing: 0.02em;
 }
 
 /* Кнопка на Studio */
 
 .btn-studio {
-  font-size: 16px;
+  font-family: inherit;
+  /* font-size: 16px; */
   line-height: 1.1875;
   color: var(--btn-studio-text);
-  background: var(--btn-studio-background);
+  background-color: var(--btn-studio-background);
   border: none;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   font-style: normal;
-  /* display: flex;
+  display: flex;
   align-items: center;
-  letter-spacing: 0.04em; */
+  letter-spacing: 0.04em;
 }
 
 .btn-studio:active {
-  background: var(--btn-studio-active-bkgrnd);
+  background-color: var(--btn-studio-active-bkgrnd);
 }
 
 /* Кнопки на Portfolio */
 .btn-portfolio {
-  background: var(--btn-portfol-background);
+  font-family: inherit;
+  background-color: var(--btn-portfol-background);
   color: var(--btn-portfol-text);
   border: none;
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   font-style: normal;
+  letter-spacing: 0.04em;
 }
 
 .btn-portfolio:hover,
-.btn-portfolio:focus {
-  background: var(--btn-portfol-background-focus);
-}
-
+.btn-portfolio:focus,
 .btn-portfolio:active {
-  background: var(--btn-portfol-active);
+  background-color: var(--btn-portfol-active);
   color: var(--btn-portfol-active-text);
 }
 
 /* Features + Works + Examples*/
 .section {
-  background: var(--section-background);
+  background-color: var(--section-background);
+}
+
+.section-portfolio .section-title {
+  visibility: hidden;
+  letter-spacing: 0.02em;
+}
+
+.section-portfolio h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.section-portfolio p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .section-title {
   color: var(--h2-color);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  letter-spacing: 0.02em;
 }
 
 .section h2 {
   font-size: 36px;
   line-height: 1.11;
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
+  letter-spacing: 0.02em;
 }
 
 .section h3 {
   color: var(--h3-color);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .section p {
@@ -189,17 +221,22 @@
   /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.2;
-  /* letter-spacing: 0.02em; */
+  letter-spacing: 0.02em;
+}
+
+.our-team li {
+  background-color: #ffffff;
 }
 
 .title-hidden {
-  display: none;
+  visibility: hidden;
 }
 
 .our-team {
   background: var(--our-team-background);
   font-size: 36px;
   line-height: 1.11;
+  letter-spacing: 0.02em;
 }
 
 /* Футер */
@@ -211,6 +248,7 @@
   /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .studio-footer {
