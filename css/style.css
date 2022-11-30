@@ -42,7 +42,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   background-color: var(--header-background);
-  font-style: normal;
 }
 
 .list {
@@ -52,7 +51,6 @@ body {
 .logo {
   color: var(--logo-color-one);
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
@@ -64,7 +62,6 @@ body {
 .studio {
   color: var(--logo-color-two);
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
@@ -76,7 +73,6 @@ body {
 /* site nav  */
 .site-nav .link {
   color: var(--header-font);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -95,8 +91,6 @@ body {
 
 .auth-nav .link {
   color: var(--accent-font-one);
-  font-style: normal;
-  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
@@ -115,7 +109,6 @@ body {
 
 .hero h1 {
   color: var(--h1-color);
-  font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -126,14 +119,13 @@ body {
 
 .btn-studio {
   font-family: inherit;
-  /* font-size: 16px; */
+  font-size: 16px;
   line-height: 1.1875;
   color: var(--btn-studio-text);
   background-color: var(--btn-studio-background);
   border: none;
   font-weight: 700;
   cursor: pointer;
-  font-style: normal;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
@@ -153,7 +145,6 @@ body {
   line-height: 1.5;
   font-weight: 700;
   cursor: pointer;
-  font-style: normal;
   letter-spacing: 0.04em;
 }
 
@@ -182,7 +173,6 @@ body {
 }
 
 .section-portfolio p {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -191,7 +181,6 @@ body {
 
 .section-title {
   color: var(--h2-color);
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -202,13 +191,11 @@ body {
   font-size: 36px;
   line-height: 1.11;
   font-weight: 700;
-  font-style: normal;
   letter-spacing: 0.02em;
 }
 
 .section h3 {
   color: var(--h3-color);
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -217,15 +204,25 @@ body {
 
 .section p {
   color: var(--article-text);
-  /* font-style: normal; */
-  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
 .our-team li {
-  background-color: #ffffff;
+  background-color: var(--page-background);
+}
+
+.visuallyhidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .title-hidden {
@@ -244,7 +241,6 @@ body {
 .footer {
   background: var(--footer-background);
   color: var(--footer-text);
-  font-style: normal;
   /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.5;
